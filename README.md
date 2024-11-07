@@ -59,7 +59,7 @@ Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design -Version 8.0.3
 <h2 id="database-setup">📂 Database Setup</h2>
 <ol>
   <li>Clone the repository:</li>
-  <pre><code>git clone https://github.com/MdAshikur-Rahman-Ashik/ASP_CoreWebAppWith_MVC_AuthenticationEmployeeCRUD</code></pre>
+  <pre><code>git clone https://github.com/MdAshikur-Rahman-Ashik/ASP.NET_Core_Web_Application_With_MVC_Authentication-_and_Employee_CRUD</code></pre>
   
   <li>Add the initial migration:</li>
   <pre><code>dotnet ef migrations add InitialCreate</code></pre>
