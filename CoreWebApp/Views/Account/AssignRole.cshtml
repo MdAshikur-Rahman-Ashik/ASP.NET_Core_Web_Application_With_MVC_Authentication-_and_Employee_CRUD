@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityUser>
+
+<h1 class="mb-4">Assign Role</h1>
+
+<div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4">
+        <form asp-action="AssignRole">
+            <div class="mb-3">
+                <label for="userId" class="form-label">User</label>
+                <select class="form-select" id="userId" name="userId">
+                    @foreach (var user in Model)
+                    {
+                        <option value="@user.Id">@user.UserName</option>
+                    }
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="roleName" class="form-label">Role</label>
+                <input type="text" class="form-control" id="roleName" name="roleName" placeholder="Enter role name">
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-success">Assign Role</button>
+            </div>
+        </form>
+    </div>
+</div>
